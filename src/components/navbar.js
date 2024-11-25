@@ -1,4 +1,6 @@
 import { Home, Book, Film, Code, Info } from 'lucide-react';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+
 export default function Navbar(){
     return(
       <nav className="navbar navbar-expand-lg shadow-sm" style={{ backgroundColor: '#ffffff' }}>
