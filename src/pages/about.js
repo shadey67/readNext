@@ -1,5 +1,8 @@
 import React from 'react';
 import { Briefcase, GraduationCap, MessageSquare } from 'lucide-react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 export default function About() {
   return (
@@ -9,7 +12,6 @@ export default function About() {
           <div className="col-lg-8">
             <div className="card shadow-sm border-0 rounded-3 h-100">
               <div className="card-body p-4 p-lg-5">
-                <h2 className="display-6 fw-bold text-primary mb-4">Recommendation Tool</h2>
                 <div className="mb-4">
                   <h5 className="text-muted mb-3">This tool helps you discover new books, films and more based on your current interests.</h5>
                   <div className="border-start border-4 border-primary ps-4 mb-4">
@@ -26,17 +28,33 @@ export default function About() {
                     </p>
                   </div>
                   <h6 className="text-muted mb-3">Please feel free to reach out with any feedback!</h6>
+                  <div className="d-flex gap-3">
+                    <a 
+                      href="https://www.linkedin.com/in/owen-shade-a82019209/" 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="btn btn-outline-primary"
+                    >
+                      <FontAwesomeIcon icon={faLinkedin} className="me-2" />
+                      LinkedIn
+                    </a>
+                    <a 
+                      href="mailto:owenshade4@gmail.com" 
+                      className="btn btn-outline-primary"
+                    >
+                      <FontAwesomeIcon icon={faEnvelope} className="me-2" />
+                      Email
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-
-          {/* Sidebar */}
           <div className="col-lg-4">
             <div className="card shadow-sm border-0 rounded-3">
               <div className="card-body p-4">
                 <h2 className="h3 fw-bold text-primary mb-4">About Me</h2>
-                
+               
                 <div className="d-flex align-items-start mb-4">
                   <div className="me-3">
                     <Briefcase className="text-primary" size={24} />
@@ -48,7 +66,6 @@ export default function About() {
                     </p>
                   </div>
                 </div>
-
                 <div className="d-flex align-items-start mb-4">
                   <div className="me-3">
                     <GraduationCap className="text-primary" size={24} />
@@ -60,7 +77,6 @@ export default function About() {
                     </p>
                   </div>
                 </div>
-
                 <div className="d-flex align-items-start">
                   <div className="me-3">
                     <MessageSquare className="text-primary" size={24} />
