@@ -13,11 +13,13 @@ export default function FilmRecommendation() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
+  const API_ENDPOINT = process.env.REACT_APP_FILM_ENDPOINT;
+
   const requestRec = useCallback(async (e) => {
     e.preventDefault();
     setLoading(true);
     try{
-    const response = await fetch('', {
+    const response = await fetch(API_ENDPOINT, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
