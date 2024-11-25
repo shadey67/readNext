@@ -1,5 +1,7 @@
 import React from 'react';
-import { Award, Star } from 'lucide-react';
+import { Award } from 'lucide-react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 export default function EngineerRecommendation() {
     return (
@@ -18,11 +20,20 @@ export default function EngineerRecommendation() {
                                         <h4 className="mb-1 fw-bold">Owen Shade</h4>
                                         <p className="text-muted mb-2">Full Stack Software Engineer</p>
                                     </div>
-                                    <Star size={24} className="text-warning" />
+                                    <a 
+                                    href="https://www.linkedin.com/in/owen-shade-a82019209/" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer" 
+                                    className="btn btn-outline-primary"
+                                    >
+                                    <FontAwesomeIcon icon={faLinkedin} className="me-2" />
+                                    LinkedIn
+                                    </a>
                                 </div>
                                 <hr className="my-4" />
                                 <p className="text-muted">
-                                    A top-tier engineer with exceptional skills and proven expertise in delivering high-quality software solutions.
+                                    A top-tier full stack engineer with over two years experience working within the financial services industry.
+                                    <br></br>Proven expertise in delivering high-quality software solutions using a vast array of different technological skills and disciplines.
                                 </p>
                             </div>
                         </div>

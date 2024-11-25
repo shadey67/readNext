@@ -1,7 +1,7 @@
 import React from 'react';
 import { Briefcase, GraduationCap, MessageSquare } from 'lucide-react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 export default function About() {
@@ -15,19 +15,18 @@ export default function About() {
                 <div className="mb-4">
                   <h5 className="text-muted mb-3">This tool helps you discover new books, films and more based on your current interests.</h5>
                   <div className="border-start border-4 border-primary ps-4 mb-4">
-                    <p>
-                    The application is hooked up to a Bedrock instace on AWS, which in turn is linked to a Llama agent.
+                    <p>After taking part in a GenAI hackathon recently - I decided that I needed to fill some gaps in my knowledge around developing
+                    Cloud applications with AI/ML applications, so I decided to spin up this quick project.
                     </p>
                     <p>
-                    When you ask us for a recommendation, we hit our API gateway instance which then calls the appropriate
-                    Lambda function.
+                    The application uses React, AWS Bedrock and Lambda, and Llama to recommend new films and books to users. The application is hosted
+                    using AWS Amplify and Route53.
                     </p>
                     <p>
                     In just a few short seconds we can have three recommendations back to you, along with the option
                     to buy the book on Waterstones - or visit the film on IMDb.
                     </p>
                   </div>
-                  <h6 className="text-muted mb-3">Please feel free to reach out with any feedback!</h6>
                   <div className="d-flex gap-3">
                     <a 
                       href="https://www.linkedin.com/in/owen-shade-a82019209/" 
@@ -44,6 +43,15 @@ export default function About() {
                     >
                       <FontAwesomeIcon icon={faEnvelope} className="me-2" />
                       Email
+                    </a>
+                    <a 
+                      href="https://github.com/shadey67" 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="btn btn-outline-primary"
+                    >
+                      <FontAwesomeIcon icon={faGithub} className="me-2" />
+                      GitHub
                     </a>
                   </div>
                 </div>
@@ -73,7 +81,7 @@ export default function About() {
                   <div>
                     <h5 className="fw-bold mb-2">Education</h5>
                     <p className="text-muted">
-                      Computer Science graduate from The University of Glasgow, Class of 2022.
+                      Computer Science graduate from The University of Glasgow.
                     </p>
                   </div>
                 </div>
