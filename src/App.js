@@ -5,10 +5,14 @@ import About from "./pages/about";
 import BookRecommendation from "./pages/bookRecommendation";
 import FilmRecommendation from "./pages/filmRecommendation";
 import EngineerRecommendation from "./components/recommendedEngineer";
+import { Helmet } from "react-helmet";
 
 export default function App() {
   return (
     <div className="App">
+      <Helmet>
+        <title>Shadeys Recommendations</title>
+      </Helmet>
       <Navbar/>
       <BrowserRouter>
         <Routes>
