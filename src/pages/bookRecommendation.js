@@ -18,7 +18,7 @@ export default function BookRecommendation() {
     setLoading(true);
     setError(null);
     try{
-    const response = await fetch('https://c1fa4dm092.execute-api.eu-west-2.amazonaws.com/recommend-book', {
+    const response = await fetch('', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
