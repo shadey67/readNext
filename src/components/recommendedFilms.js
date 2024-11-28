@@ -1,4 +1,4 @@
-export default function buildRecommendedFilms(item){
+export default function BuildRecommendedFilms(item){
     const baseURL = 'https://www.imdb.com/find/?q='
     return (
       <div className="col mb-4">
@@ -6,7 +6,7 @@ export default function buildRecommendedFilms(item){
           <div className="card-body d-flex flex-column justify-content-between">
             <div>
               <h4 className="card-title text-primary">{item.title}</h4>
-              <p className="card-text text-muted">{item.director}</p>
+              <p className="card-text text-muted">by {item.director}</p>
             </div>
             <div className="mt-3">
               <a 
@@ -15,7 +15,7 @@ export default function buildRecommendedFilms(item){
                 rel="noopener noreferrer"
                 className="btn btn-outline-primary btn-sm"
               >
-                IMDb
+                ImDb
               </a>
             </div>
           </div>
